@@ -33,7 +33,16 @@ while True:
     elif choice =='2':
         print('goodbye')
         break
+    print('hi :)')
+    print('testing')
         #to learn git use the document in the official site
         #git init
+        #init is short for 'initialization'?
         #. before name of a folder makes it hidden
+        #repository = the folder we work with
+        #  git add .
+        #git status
+        #git commit -m 
+        #-m is our message 
+        #for every change made on our project we have to use commit and add
 
