@@ -1,0 +1,58 @@
+ROUNDS = 5
+TIME_LIMIT = 30
+POINTS = 10
+SPEED_BONUS = 3
+class Question:
+    def __init__ (self,text : str,options : list [str],correct : [str]) -> None:
+        self.__text=text
+        self.__options=options
+        self.__correct
+    
+    def is_correct(self,choice) -> bool:
+        return choice.strip().upper()==self.__correct
+
+    def correct_text(self) -> str:
+        return self.__options ['ABCD'.index(self.correct)]
+
+class Match:
+    def __init__ (self ,player1, player2 , questions) -> None:
+        if player1 == player2:
+            raise ValueError("Unique Name Per Player")
+        self.__players=[player1, player2]
+        self.__player2=player2
+        self.__questions=questions
+        self.__scores={player1: 0 , player2:0}
+        self.__round=0
+        self.__answers={}
+
+    def start_round(self) ->Question:
+        self.__round=+1
+        self.__answers={}
+        return self.__questions[self round - 1]
+        #so when a player answers a question, the question appears once again so the second player can also answer
+
+    def submit (self,player,choice,elapsed) ->None:
+        self.__answers[player]=(choice,elapsed)
+      
+    def resolve_round(self) -> None:
+      questions=self.__questions[self.round - 1]
+      for player in self.__players:
+        if elapsed > 30:
+            self.__scores[player] += 0
+        elif question.is_correct(choice):
+            self.__scores[player] +- 10
+        
+
+    def is_over(self)-> bool:
+        return self.round>5
+        
+    def Winner(self) -> None:
+        player1,player2 = self.__players
+        if self.__scores[player1]==self.__scores[player2]:
+            return None
+
+        if self.__scores[player1]>self.__scores[player2]:
+            return player1
+
+        else:
+            return player2

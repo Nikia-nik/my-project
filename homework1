@@ -10,9 +10,6 @@ class Question:
     
     def is_correct(self,choice : str) -> bool:
         return choice.strip().upper()==self.__correct
-#so basically that lines is choice.strip().upper()==self.correct
-#if ... return true 
-#else : return false
 
     def correct_text(self) -> str :
         return self.__options ['ABCD'.index(self.__correct)]
@@ -31,17 +28,12 @@ class Match:
         self.__round=+1
         self.__answers={}
         return self.__questions[self round - 1]
-        #so when a player answers a question, the question appears once again so the second player can also answer
 
     def submit (self,player : str ,choice : str,elapsed : float) -> None:
         self.__answers[player]=(choice,elapsed)
-        #each player answers individually that's why we have player and not players
-    #از ما سه تا ورودی میگیره که ببینیم چه بازیکنی چه جوابی داده و در چه زمانی
 
     def resolve_round(self) -> None:
-      #بررسی نتیجه
-      #بررسی جواب برای هر بازیکن
-      #در صورت درست بودن اضافه کردن امتیاز به هر بازیکن
+    
       questions : Question =self.__questions[self.__round - 1]
       for player in self.__players:
     #elapsed = 
