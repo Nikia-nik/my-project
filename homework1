@@ -3,22 +3,22 @@ TIME_LIMIT = 30
 POINTS = 10
 SPEED_BONUS = 3
 class Question:
-    def __init__ (self,text : str ,options : list[str],correct : [str]):
+    def __init__ (self,text : str ,options : list[str],correct : [str]) -> None:
         self.__text = text
         self.__options = options
         self.__correct = correct
     
-    def is_correct(self,choice : str):
+    def is_correct(self,choice : str) -> bool:
         return choice.strip().upper()==self.__correct
 #so basically that lines is choice.strip().upper()==self.correct
 #if ... return true 
 #else : return false
 
-    def correct_text(self):
+    def correct_text(self) -> str :
         return self.__options ['ABCD'.index(self.__correct)]
 
 class Match:
-    def __init__ (self ,player1 : str, player2 : str , questions : list [Question]):
+    def __init__ (self ,player1 : str, player2 : str , questions : list [Question]) -> None:
         if player1 == player2:
             raise ValueError("Unique Name Per Player!")
         self.__players=[player1, player2]
@@ -27,18 +27,18 @@ class Match:
         self.__round : int =0
         self.__answers={}
 
-    def start_round(self):
+    def start_round(self) -> Question:
         self.__round=+1
         self.__answers={}
         return self.__questions[self round - 1]
         #so when a player answers a question, the question appears once again so the second player can also answer
 
-    def submit (self,player : str ,choice : str,elapsed : float):
+    def submit (self,player : str ,choice : str,elapsed : float) -> None:
         self.__answers[player]=(choice,elapsed)
         #each player answers individually that's why we have player and not players
     #از ما سه تا ورودی میگیره که ببینیم چه بازیکنی چه جوابی داده و در چه زمانی
 
-    def resolve_round(self):
+    def resolve_round(self) -> None:
       #بررسی نتیجه
       #بررسی جواب برای هر بازیکن
       #در صورت درست بودن اضافه کردن امتیاز به هر بازیکن
@@ -53,7 +53,7 @@ class Match:
     #if you click on control k control 1 it closes all the defs
         
 
-    def is_over(self):
+    def is_over(self)-> bool:
         #so we know if the round is finished or not
         return self.__round>5
         #if (self.round>5):
@@ -61,7 +61,7 @@ class Match:
         #else: 
             #return False
         
-    def winner(self):
+    def winner(self)-> None:
         player1,player2 = self.__players
         if self.__scores[player1]==self.__scores[player2]:
             return None
@@ -71,3 +71,4 @@ class Match:
 
         else:
             return player2
+
