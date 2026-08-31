@@ -72,3 +72,11 @@ class Match:
         else:
             return player2
 
+#notes:
+#__init__ (method : None)
+#is_correct (method : bool)
+#correct_text (method : str)
+#start_round (method : Questions)
+#submit (method : none)
+#resolve_round (None)
+#is_over (bool)
