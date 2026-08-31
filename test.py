@@ -11,28 +11,28 @@ questions: list = [
     ('question4', ['A' , 'B' , 'C' , 'D'],'B'),
     ('question5', ['A' , 'B' , 'C' , 'D'],'C')
 ]
+while true:
+    def show_menu():
+        print('1. start')
+        print('2. exit')
+        choice = input('choose option 1 or 2').strip()
+        return choice
 
-def show_menu():
-    print('1. start')
-    print('2. exit')
-    choice = input('choose option 1 or 2').strip()
-    return choice
-
-def playing():
-    score = 0
-    for q, options, correct_answer in questions:
-        print(f'\n{q}')
-        for opt in options:
-            print(opt)
-        answer: str = input('your answer: ').strip().upper()
-        if answer==correct_answer:
-            print('correct')
-            score+=1
-        else:
-            print('wrong')
-            score-=3 
+    def playing():
+        score = 0
+        for q, options, correct_answer in questions:
+            print(f'\n{q}')
+            for opt in options:
+                print(opt)
+            answer: str = input('your answer: ').strip().upper()
+            if answer==correct_answer:
+                print('correct')
+                score+=1
+            else:
+                print('wrong')
+                score-=3 
     
-    return score
+        return score
 
 def show_result(score):
 
@@ -44,7 +44,7 @@ if choice =='1':
         show_result(score)
 elif choice =='2':
         print('goodbye')
-        
+
 
 
         #to learn git use the document in the official site
@@ -67,6 +67,16 @@ elif choice =='2':
         #you can use the 'down' button to see the previous changes made with 'git log' :)
         #home work:
         #make the game two players
+
+        #شیی گرایی یک تکنیک برنامه نویسه تا بتونیم کد هام.ن رو دقیق تر و تمیز تز داشته باشیم 
+        #یکی از دلایلی که از شیی گرایی استفاده میشه برای تقسیم کار و بخش بندی کرئنه
+        #کد ها مستقل ترن چون یک خطا کل پروژه رو خراب نمیکنه
+        #مهندسی پروژه مهمتر از کد نوشتنه
+        #ویژگی خصوصیاته 
+        #رفتار کاریه که انجام میدن
+        #init=سازنده
+        #text_options_correcttext
+        
 
         
 

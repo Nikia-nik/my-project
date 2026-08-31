@@ -1,0 +1,73 @@
+ROUNDS = 5
+TIME_LIMIT = 30
+POINTS = 10
+SPEED_BONUS = 3
+class Question:
+    def __init__ (self,text : str ,options : list[str],correct : [str]):
+        self.__text = text
+        self.__options = options
+        self.__correct = correct
+    
+    def is_correct(self,choice : str):
+        return choice.strip().upper()==self.__correct
+#so basically that lines is choice.strip().upper()==self.correct
+#if ... return true 
+#else : return false
+
+    def correct_text(self):
+        return self.__options ['ABCD'.index(self.__correct)]
+
+class Match:
+    def __init__ (self ,player1 : str, player2 : str , questions : list [Question]):
+        if player1 == player2:
+            raise ValueError("Unique Name Per Player!")
+        self.__players=[player1, player2]
+        self.__questions=questions
+        self.__scores={player1: 0 , player2:0}
+        self.__round : int =0
+        self.__answers={}
+
+    def start_round(self):
+        self.__round=+1
+        self.__answers={}
+        return self.__questions[self round - 1]
+        #so when a player answers a question, the question appears once again so the second player can also answer
+
+    def submit (self,player : str ,choice : str,elapsed : float):
+        self.__answers[player]=(choice,elapsed)
+        #each player answers individually that's why we have player and not players
+    #از ما سه تا ورودی میگیره که ببینیم چه بازیکنی چه جوابی داده و در چه زمانی
+
+    def resolve_round(self):
+      #بررسی نتیجه
+      #بررسی جواب برای هر بازیکن
+      #در صورت درست بودن اضافه کردن امتیاز به هر بازیکن
+      questions : Question =self.__questions[self.__round - 1]
+      for player in self.__players:
+    #elapsed = 
+    #تایم صرف شده ی بازیکن
+        if elapsed > 30:
+            self.__scores[player] += 0
+        elif question.is_correct(choice):
+            self.__scores[player] +- 10
+    #if you click on control k control 1 it closes all the defs
+        
+
+    def is_over(self):
+        #so we know if the round is finished or not
+        return self.__round>5
+        #if (self.round>5):
+            #return True
+        #else: 
+            #return False
+        
+    def winner(self):
+        player1,player2 = self.__players
+        if self.__scores[player1]==self.__scores[player2]:
+            return None
+
+        if self.__scores[player1]>self.__scores[player2]:
+            return player1
+
+        else:
+            return player2
