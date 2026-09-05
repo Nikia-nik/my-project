@@ -28,8 +28,7 @@ class Match:
     def start_round(self) ->Question:
         self.__round=+1
         self.__answers={}
-        return self.__questions[self round - 1]
-        #so when a player answers a question, the question appears once again so the second player can also answer
+        return self.__questions[self.__round - 1]
 
     def submit (self,player,choice,elapsed) ->None:
         self.__answers[player]=(choice,elapsed)
