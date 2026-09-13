@@ -9,7 +9,7 @@ question3 : Question = Question( ['A' , 'B' , 'C' , 'D'],'D')
 question4: Question = Question(['A' , 'B' , 'C' , 'D'],'B')
 question5: Question = Question(['A' , 'B' , 'C' , 'D'],'C')
 
-questions: list = [Questions]= [
+questions: list = [Questions] = [
     Question1,
     Question2,
     Question3,
