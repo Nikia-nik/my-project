@@ -1,0 +1,64 @@
+#to learn git use the document in the official site
+        #git init
+        #init is short for 'initialization'
+        #. before name of a folder makes it hidden
+        #repository = the folder we work with
+        #  git add .
+        #git status
+        #git commit -m 
+        #-m is our message 
+        #for every change made on our project we have to use commit and add
+        #you have to create '.gitignore' so you can ignore some stuff from your project instead of bringing everything 
+        #to your git
+        #use the 'up' button to go to previous commands
+        #'git restore' , we use that command to go back to the latest saved version
+        #you can also use ctrl + & ctrl + y
+        #we should use git commit for meaningful changes only so later on when we look at it, it makes sense
+        #git log
+        #you can use the 'down' button to see the previous changes made with 'git log' :)
+        #home work:
+        #make the game two players
+
+        #شیی گرایی یک تکنیک برنامه نویسه تا بتونیم کد هام.ن رو دقیق تر و تمیز تز داشته باشیم 
+        #یکی از دلایلی که از شیی گرایی استفاده میشه برای تقسیم کار و بخش بندی کرئنه
+        #کد ها مستقل ترن چون یک خطا کل پروژه رو خراب نمیکنه
+        #مهندسی پروژه مهمتر از کد نوشتنه
+        #ویژگی خصوصیاته 
+        #رفتار کاریه که انجام میدن
+        #init=سازنده
+        #text_options_correcttext
+        
+
+        
+
+#notes:
+#__init__ (method : None)
+#is_correct (method : bool)
+#correct_text (method : str)
+#start_round (method : Questions)
+#submit (method : none)
+#resolve_round (None)
+#is_over (bool)
+#کد هامون توی یک محیط ابری وجود داشته باشه 
+#یکی از سرویس هایی که وجود داره گیت هابه
+#gitlab , (bit bucket) 
+#log in (repository = folder)
+#choose the language of the codes (for example : python)
+#قبل از شروع هر پروژه میت.نی مراجعه کنی به github
+#هرچقدر زمان اپدیدت جدیدتر باشه بهتر
+#تعداد star
+#هرپی تعداد ستاره ها بیشتر احتمالا اون پروژه معتبرتره
+#first we copy the link of our project in the 'HTTPS' form and we type :
+#git remote -v (enter)
+#origin (*paste the link* and then *enter*)
+#https://github.com/nader14y/project-sd1.gt 
+#وارد همون صفحه ی اصلی vs code 
+#میشیم
+#click on 'clone git repository'
+#paste the url and then decide when to save it on your local
+#git add.
+#git commit 
+#git push
+#go to settting -> go to collaberations
+#refactor یعنی بازنویسی کردن کد ها 
+#
