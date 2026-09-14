@@ -17,7 +17,7 @@ questions: list = [
     question4,
     question5
 ]
-def show_menu():-> str:
+def show_menu(): 
     print('1. start')
     print('2. exit')
     choice = input('choose option 1 or 2').strip()
@@ -63,7 +63,7 @@ while True:
     if choice == "1":
         playing()
     elif choice == "2":
-print("goodbye")
+        print("goodbye")
         break
     else:
         print("invalid choice")
