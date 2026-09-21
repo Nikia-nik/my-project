@@ -1,12 +1,18 @@
 import time
+
 from rich.console import Console
 from engine import Question, Match
 from engine import Match, Question , ROUNDS , TIME_LIMIT
-from storage import QuestionBank
+from storage import QuestionBank , ScoreBoard
 
 console = Console()
 
 question_bank = QuestionBank()
+Board = ScoreBoard()
+show_leaderboard(board)
+
+
+
 questions : list [Question] = question_bank.pick(ROUNDS)
 
  
@@ -26,6 +32,7 @@ def main():
     player2 = input("Player 2 Name: ")
 
     match = Match(player1, player2, questions)
+    
 
     while not match.is_over():
 
