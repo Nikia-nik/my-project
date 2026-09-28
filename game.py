@@ -31,8 +31,7 @@ def main():
     player1 = input("Player 1 Name: ")
     player2 = input("Player 2 Name: ")
 
-    match = Match(player1, player2, questions)
-    
+    match = Match(player1, player2, questions
 
     while not match.is_over():
 
@@ -61,6 +60,7 @@ def main():
                 f"{player}: {match.scores[player]}",
                 style="green"
             )
+    )
 
     winner = match.winner()
 
