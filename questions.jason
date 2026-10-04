@@ -1,52 +1,37 @@
 [
     {
-        "question":"choose the biggest number",
-        "options":[
-            "a) 10", 
-            "b) 20", 
-            "c) 15", 
-            "d) 12"
+        "text": "پایتخت ژاپن کدام است؟",
+        "options": [
+            "توکیو", "کیوتو", "اوساکا", "سئول"
         ],
-        "correct": "b"
+        "correct": "A"
     },
     {
-        "question":"choose the lowest number",
-        "options":[
-            "a) 10", 
-            "b) 20", 
-            "c) 15", 
-            "d) 12"
+        "text": "خروجی len('سلام') چیست؟",
+        "options": [
+            "3", "4", "5", "خطا"
         ],
-        "correct": "a"
+        "correct": "B"
     },
     {
-        "question":"choose the even number",
-        "options":[
-            "a) 10", 
-            "b) 21", 
-            "c) 15", 
-            "d) 12"
+        "text": "بزرگ‌ترین سیاره‌ی منظومه‌ی شمسی؟",
+        "options": [
+            "زمین", "زحل", "مشتری", "نپتون"
         ],
-        "correct": "d"
+        "correct": "C"
     },
     {
-        "question":"choose the biggest number",
-        "options":[
-            "a) 25", 
-            "b) 35", 
-            "c) 15", 
-            "d) 20"
+        "text": "نماد شیمیایی طلا چیست؟",
+        "options": [
+            "Ag", "Au", "Fe", "Gd"
         ],
-        "correct": "b"
+        "correct": "B"
     },
     {
-        "question":"choose the lowest number",
-        "options":[
-            "a) 8", 
-            "b) 18", 
-            "c) 5", 
-            "d) 12"
+        "text": "شاهنامه اثر کیست؟",
+        "options": [
+            "حافظ", "سعدی", "فردوسی", "مولوی"
         ],
-        "correct": "a"
+        "correct": "C"
     }
 ]
