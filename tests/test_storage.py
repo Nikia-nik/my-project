@@ -1,3 +1,7 @@
+import json
+from pathlib import Path
+from storage import QuestionBank, ScoreBoard
+
 def test_picking_more_than_the_bank_has_is_refused(tmp_path : Path) -> None:
     import pytest
     bank : QuestionBank = make_bank(tmp_path)
@@ -9,9 +13,7 @@ def test_a_new_scoreboard_is_empty(tmp_path : Path) -> None:
     assert board.is_empty()
 
 #new code (keep or delete?)
-import json
 
-from storage import QuestionBank, ScoreBoard
 
 
 SAMPLE = [
