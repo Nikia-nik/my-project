@@ -221,3 +221,18 @@ def test_prompt_choice_accepts_lowercase(tmp_path):
 
     assert choice == "A"
     assert elapsed >= 0
+#timport pytest
+#from engine import question,Match,TIME_LIMIT,POINTS,SPEED_BONUS
+#@pytest.mark.parametrize(
+    ##"choice"
+   #["B","b","b"]
+#)
+#def test_question_correct_answer (choice):
+    #question = Question(
+        #"what is 2+2?",
+        #["3","4","5","6"],
+        #"B",
+    #)
+#assert question.is_correct(choice)
+#@pytest.mark.parametrize
+#hold ctrl and / (its my ?) so they're no longer in # comments

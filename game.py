@@ -2,7 +2,8 @@ import time
 from rich.console import Console  # pyright: ignore[reportMissingImports]
 from engine import Match, ROUNDS
 from storage import QuestionBank, ScoreBoard
-
+from app_log import AppLog
+AppLog.setup()
 console = Console()
 
 
@@ -95,10 +96,15 @@ def play(bank, board):
     show_leaderboard(board)
 
 
-def main():
+def main()->None:
+    logger : Logger = AppLog.get("Game")
+    logger.info("Game started")
     bank = QuestionBank()
+    logger.info("Question bank initialized")
     board = ScoreBoard()
+    logger.info("Question bank initialized")
     show_leaderboard(board)
+    logger.info ("initial leaderboard displayed")
 
     while True:
         show_menu()
