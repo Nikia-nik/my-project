@@ -1,36 +1,36 @@
 [
     {
-        "text": "پایتخت ژاپن کدام است؟",
+        "text":"Which country is famous for inventing pizza as we know it today?",
         "options": [
-            "توکیو", "کیوتو", "اوساکا", "سئول"
+            "Italy","France","Greece","Spain"
         ],
         "correct": "A"
     },
     {
-        "text": "خروجی len('سلام') چیست؟",
+        "text": "Which ocean is the largest on Earth?",
         "options": [
-            "3", "4", "5", "خطا"
+             "Atlantic Ocean" ,"Indian Ocean" , "Arctic Ocean" ,"Pacific Ocean"
         ],
-        "correct": "B"
+        "correct": "D"
     },
     {
-        "text": "بزرگ‌ترین سیاره‌ی منظومه‌ی شمسی؟",
+        "text": "what is the largest animal in the world?",
         "options": [
-            "زمین", "زحل", "مشتری", "نپتون"
+            "African elephant", "Great white shark", "Blue whale", "Giraffe"
         ],
         "correct": "C"
     },
     {
-        "text": "نماد شیمیایی طلا چیست؟",
+        "text": "Which material is naturally the hardest?",
         "options": [
-            "Ag", "Au", "Fe", "Gd"
+            "Gold" , "Iron" , "Diamond" , "Silver"
         ],
-        "correct": "B"
+        "correct": "C"
     },
     {
-        "text": "شاهنامه اثر کیست؟",
+        "text": "How many hearts does an octopus have?",
         "options": [
-            "حافظ", "سعدی", "فردوسی", "مولوی"
+           "One" , "Two" ,"Three" , "Four"
         ],
         "correct": "C"
     }

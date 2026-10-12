@@ -9,8 +9,8 @@ logging.basicConfig(filename='myapp.log', level=logging.INFO , format ="%(asctim
 logger.info('Started')
 do_something()
 logger.info('Finished')
-'''python *name file* 
-is how you run your file in cmd
 
-%(asctime)s %(levelname)s %(name)s %(message)s
-adds the time'''
+#'''python *name file* 
+#is how you run your file in cmd
+#%(asctime)s 
+#adds the time'''
